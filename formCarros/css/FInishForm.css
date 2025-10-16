@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Open-Sans, sans-serif;
+}
+
+body {
+    background-color: #E6D6FF;
+}
+
+.container {
+    background-color: white;
+    width: 600px;
+    height: 300px;
+    margin: 40px auto;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top: 10px solid #A78BFA;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.container p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+
+    
+}

@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+header {
+  background: linear-gradient(90deg, #4b6cb7 0%, #2f5093 100%);
+
+  color: white;
+  text-align: center;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+}
+
+.changeColor {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+.changeColor img {
+  width: 40px;
+  height: 40px;
+}
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+}
+
+form {
+  z-index: 1;
+  padding: 20px;
+  border-radius: 8px;
+  width: 40%;
+  min-width: 400px;
+}
+
+#imgContainer {
+  margin-bottom: 20px;
+  text-align: center;
+  background-image: url("../img/carro.png");
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.container {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+}
+form{
+  margin-top: 50px;
+}
+
+form h2 {
+  color: #333;
+  padding: 12px;
+ 
+}
+
+form p {
+  color: #333;
+  padding: 12px;
+}
+
+form div {
+  margin-bottom: 12px;
+}
+
+
+/* Label */
+.container label {
+
+  color: #5f6368; /* cinza Google */
+  margin-bottom: 20px;
+}
+
+span {
+  
+  color: #d93025; /* vermelho Google */
+}
+
+textarea {
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  padding: 8px;
+ 
+  resize: vertical;
+  min-height: 80px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+textarea:focus {
+  border-color: #1a73e8; /* azul Google */
+}
+
+
+/* Input */
+.container input[type="text"], input[type="number"]{
+  border: none;
+  border-bottom: 1px solid #dadce0;
+  outline: none;
+ 
+  padding: 8px 0;
+  transition: border-color 0.3s ease;
+  background: transparent;
+}
+
+
+
+/* Foco */
+.container input[type="text"]:focus, input[type="number"]:focus {
+  border-bottom: 2px solid #1a73e8; /* azul Google */
+}
+
+/* Placeholder estilo Google Forms (discreto) */
+.container input::placeholder {
+  color: #9aa0a6;
+  opacity: 1;
+}
+
+select .error, input[type="date"].error {
+  border-bottom: 1px solid red; /* borda vermelha quando o campo estiver vazio */
+}
+
+input[type="file"].error {
+  color: red;
+}
+
+input[type="text"].error, input[type="number"].error {
+  border-bottom: 1px solid red; /* borda vermelha quando o campo estiver vazio */
+}
+
+input.error::placeholder {
+  color: red; /* cor do placeholder quando o campo estiver vazio */
+  opacity: 1;
+
+}
+
+textarea.error::placeholder {
+  color: red; /* cor do placeholder quando o campo estiver vazio */
+  opacity: 1;
+ 
+}
+
+/* Animação sutil ao focar */
+.container input[type="text"]:focus::placeholder, input[type="number"]:focus::placeholder {
+  color: #1a73e8;
+  transition: color 0.3s ease;
+}
+
+.btnContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+select {
+  
+  padding: 5px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  width: 50%;
+}   
+
+input[type="date"] {
+  border: none;
+  border-bottom: 1px solid #dadce0;
+  outline: none;
+
+  padding: 8px 0;
+  transition: border-color 0.3s ease;
+  background: transparent;
+  width: 50%;
+}
+
+input[type="submit"] {
+  background-color: #1a73e8; /* azul Google */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+input[type="submit"]:hover {
+  background-color: #155ab6; /* azul Google mais escuro */
+}
+
+
+/*side bar*/
+.sidebar {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  transition: 0.3s ease;
+  z-index: 2;
+  padding: 20px;
+  font-size: 14px;
+  font-family: "Open Sans", "sans-serif";
+}
+
+.sidebar h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.fontContainer{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.fontContainer label {
+  margin-bottom: 12px;
+  
+
+  color: #5f6368; /* cinza Google */
+}
+
+.fontContainer select {
+  padding: 8px;
+ 
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+
+.fontContainer select:focus {
+  border-color: #1a73e8; /* azul Google */
+}
+
+.colorsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 7px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid #cccccccd;
+}
